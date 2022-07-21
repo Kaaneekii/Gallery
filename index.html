@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Photo gallery</title>
+
+</head>
+
+<style>
+
+    header {
+        margin: 0 auto;
+        max-width: 1200px;
+        font-family: sans-serif;
+    }
+
+
+    #flexbox1 {
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 250px;
+    font-family: sans-serif;
+    
+    }
+
+    #flexbox1>div {
+     width: 150px;
+     height: 150px;
+     margin: 30px;
+     background-color: #5444e4;
+     border-radius: 10px;
+     border: 1px solid black;
+     max-width: 150px;
+     min-width: 150px;
+     
+    }
+
+    #flexbox1>div>img {
+        width: 100%;
+        height: 80%;
+    }
+
+    div.desc {
+        padding: 4px;
+        text-align: center;
+        background-color: white;
+        border-bottom-left-radius: 9px;
+        border-bottom-right-radius: 9px;
+    }
+   
+
+    @media screen and (max-width: 1024px) {
+    .column {
+    flex-basis: 33.33%;
+    }
+    }
+    @media screen and (max-width: 768px) {
+    .column {
+    flex-basis: 50%;
+    }
+    }
+    @media screen and (max-width: 414px) {
+    .column {
+    flex-basis: 100%;
+    }
+}
+
+
+
+    
+    
+    
+
+</style>
+
+<body>
+    <header><h1>Photo gallery</h1></header>
+    <div id="flexbox1">
+        <div id="box1" class="column">
+            <img src="placeholder-image.png">
+            <div class="desc">Image title</div>
+        </div>
+        <div id="box2" class="column">
+            <img src="placeholder-image.png">
+            <div class="desc">Image title</div>
+        </div>
+        <div id="box3" class="column">
+            <img src="placeholder-image.png">
+            <div class="desc">Image title</div>
+        </div>
+        <div id="box4" class="column">
+            <img src="placeholder-image.png">
+            <div class="desc">Image title</div>
+        </div>
+        <div id="box5" class="column">
+            <img src="placeholder-image.png">
+            <div class="desc">Image title</div>
+        </div>
+        <div id="box6" class="column">
+            <img src="placeholder-image.png">
+            <div class="desc">Image title</div>
+        </div>
+        <div id="box7" class="column">
+            <img src="placeholder-image.png">
+            <div class="desc">Image title</div>
+        </div>
+        <div id="box8" class="column">
+            <img src="placeholder-image.png">
+            <div class="desc">Image title</div>
+        </div>
+        <div id="box9" class="column">
+            <img src="placeholder-image.png">
+            <div class="desc">Image title</div>
+        </div>
+        <div id="box10" class="column">
+            <img src="placeholder-image.png">
+            <div class="desc">Image title</div>
+        </div>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus 
+            sollicitudin maximus velit, id dignissim nisl rhoncus eget. Praesent 
+            interdum at tortor eu laoreet. Vivamus dictum, erat vitae feugiat semper, 
+            massa tellus aliquet massa, pharetra finibus dui orci ut nunc. Suspendisse 
+            sagittis condimentum odio. Morbi vulputate justo in orci volutpat 
+            elementum. Aliquam tincidunt semper turpis at sodales. Proin et lobortis 
+            tellus. Pellentesque convallis ipsum et mattis elementum. Fusce tempor diam 
+            eget pulvinar interdum. Proin ornare massa nunc, non efficitur sem pulvinar 
+            vel. Mauris ultricies accumsan placerat.
+            
+                Nunc hendrerit sollicitudin est in pharetra. Phasellus quis aliquam 
+            massa. Aenean venenatis cursus metus, vitae molestie justo porta eu. 
+            Nullam ut iaculis est, non rutrum orci. Nulla neque ligula, molestie ut 
+            sem sed, porta sagittis lacus. Aliquam venenatis viverra rutrum. 
+            Integer est ex, malesuada eu malesuada non, ornare at est. Nulla 
+            suscipit justo ut orci finibus mattis.</p>
+            
+
+    </div>
+
+
+
+</body>
+
+</html>
